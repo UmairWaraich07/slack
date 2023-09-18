@@ -1,0 +1,48 @@
+.chat {
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll !important;
+  padding-bottom: 150px;
+}
+
+.chat__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px;
+}
+
+.chat__header-left {
+  display: flex;
+  align-items: center;
+}
+
+.chat__header-right > p {
+  font-size: 14px;
+}
+
+.chat__header-left > .MuiSvgIcon-root {
+  font-size: 18px !important;
+  margin-left: 10px;
+}
+.chat__header-right > .MuiSvgIcon-root {
+  font-size: 18px !important;
+  margin-right: 10px;
+}
+.chat__header-right {
+  display: flex;
+  align-items: center;
+}
+/**
+* ! Media queries
+*/
+
+@media (min-width: 600px) {
+  .chat {
+    flex: 1;
+  }
+  .chat__header {
+    padding: 20px;
+  }
+}

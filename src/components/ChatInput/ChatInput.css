@@ -1,0 +1,51 @@
+.chatinput {
+  position: relative;
+  padding: 0 20px;
+}
+.chatinput > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatinput input {
+  position: fixed;
+  bottom: 10px;
+  border: none;
+  border: 1px solid gray;
+  padding: 25px 20px;
+  font-family: inherit;
+  width: 75%;
+  border-radius: 8px;
+  background-color: #f9f8f8;
+}
+@media (max-width: 850px) {
+  .chatinput input {
+    width: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .chatinput input {
+    width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  .chatinput input {
+    padding: 15px 10px;
+  }
+}
+@media (max-width: 420px) {
+  .chatinput input {
+    padding: 12px 8px;
+    font-size: 0.9rem;
+    width: 62%;
+  }
+}
+.chatinput input:hover,
+.chatinput input:focus-within {
+  outline: none;
+}
+
+.chatinput button {
+  display: none !important;
+}

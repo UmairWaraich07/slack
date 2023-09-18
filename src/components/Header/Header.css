@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--slack-color);
+  color: #fff;
+}
+@media (min-width: 600px) {
+  .header {
+    padding: 7px;
+  }
+}
+
+.header__left {
+  flex: 0.3;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__left > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.header__search {
+  flex: 0.4;
+  display: flex;
+  gap: 20px;
+  padding-inline: 10px;
+  padding-block: 2px;
+  align-items: center;
+  background-color: #421f44;
+  color: #fff;
+  border-radius: 6px;
+  min-width: 100px;
+  border: 1px solid gray;
+}
+
+.header__search > input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+.header__search > input:focus-within {
+  outline: none;
+}
+
+.header__right {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .header__left {
+    justify-content: center;
+  }
+  .header__search {
+    flex: 1;
+    gap: 10px;
+  }
+  .header__right {
+    gap: 10px;
+    margin-left: 10px;
+  }
+}

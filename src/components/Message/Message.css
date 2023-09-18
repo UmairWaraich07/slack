@@ -1,0 +1,40 @@
+.message {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 10px;
+}
+.message__img {
+  object-fit: contain;
+  height: 40px;
+  width: 40px;
+  border-radius: 4px;
+}
+.message__info > h4 > span {
+  font-size: 10px;
+  font-weight: 300;
+  margin-left: 5px;
+  color: gray;
+}
+.message__info > h4 {
+  font-size: 14px;
+}
+.message__info p {
+  font-size: 12px;
+}
+@media (min-width: 600px) {
+  .message {
+    padding: 20px;
+    gap: 1em;
+  }
+  .message__info > h4 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .message__info p {
+    font-size: 14px;
+  }
+  .message__info > h4 > span {
+    font-size: 12px;
+  }
+}

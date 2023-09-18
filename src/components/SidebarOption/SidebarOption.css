@@ -1,0 +1,35 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebarOption__icons {
+  padding: 10px;
+  font-size: 37px !important;
+}
+.sidebarOption:hover,
+.sidebarOption:focus-within {
+  background-color: #340e36;
+  opacity: 0.9;
+}
+.sidebarOption__options {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+@media (min-width: 600px) {
+  .sidebarOption__options {
+    font-weight: 500;
+  }
+}
+
+.sidebarOption__channel {
+  padding-block: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.sidebarOption__hash {
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 10px;
+}

@@ -1,0 +1,68 @@
+.sidebar {
+  background-color: var(--slack-color);
+  max-width: 200px;
+  color: #fff;
+  border-top: 1px solid #49274b;
+  padding-bottom: 30px;
+  min-height: 100vh;
+}
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #49274b;
+  padding: 12px;
+}
+.sidebar__header-info {
+  flex: 1;
+}
+.sidebar__header-info > h4 {
+  display: flex;
+  align-items: center;
+}
+.sidebar__header-info > h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.sidebar__header-info > h4 {
+  font-size: 10px;
+  font-weight: 400;
+}
+.sidebar__header-info > h4 > .MuiSvgIcon-root {
+  font-size: 14px;
+  margin-right: 3px;
+  color: green;
+}
+
+.sidebar__header > .MuiSvgIcon-root {
+  font-size: 30px;
+  padding: 8px;
+  background-color: white;
+  color: #49274b;
+  border-radius: 100vmax;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #49274b;
+}
+
+@media (min-width: 600px) {
+  .sidebar__header-info > h3 {
+    font-size: 16px;
+    font-weight: 900;
+  }
+  .sidebar__header > .MuiSvgIcon-root {
+    font-size: 35px;
+  }
+  .sidebar__header-info > h4 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .sidebar {
+    min-width: 250px;
+  }
+}
